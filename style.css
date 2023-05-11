@@ -61,7 +61,9 @@
 .watch .time {
     font-size: 40px;
     position: relative;
-    left: 2rem;
+    /* left: 2rem;
+     */
+    margin: 0px auto;
     color: #f3f3f6;
     top: 6rem;
 }
@@ -72,7 +74,7 @@
     box-shadow: 0 0 100px white;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
     * {
         margin: 0;
         padding: 0;
