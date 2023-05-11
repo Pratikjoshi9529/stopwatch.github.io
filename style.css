@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222242;
+}
+
+.watch {
+    height: 15rem;
+    width: 15rem;
+    background-color: black;
+    border-radius: 50%;
+    top: 12%;
+    z-index: 1;
+    left: 10%;
+    position: relative;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+
+    0%,
+    100% {
+        box-shadow: 0px 0px 32px -12px rgba(33, 160, 40, .5);
+    }
+
+    50% {
+        box-shadow: 0px 0px 32px 3px rgba(33, 160, 40, .5);
+    }
+}
+
+.buttons {
+    width: 18rem;
+    position: relative;
+    top: 6rem;
+    left: 6%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.buttons button {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 3%;
+    width: 5rem;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.watch .time {
+    font-size: 40px;
+    position: relative;
+    left: 2rem;
+    color: #f3f3f6;
+    top: 6rem;
+}
+
+.buttons button:hover {
+    color: rgb(255, 132, 0);
+    border: 1px solid rgb(255, 132, 0);
+    box-shadow: 0 0 100px white;
+}
+
+@media only screen and (min-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid {
+        height: 100vh;
+        width: 100vw;
+        background-color: #222242;
+    }
+
+    .watch {
+        height: 20rem;
+        width: 20rem;
+        top: 12%;
+        left: 37%;
+    }
+
+    .buttons {
+        width: 20rem;
+        top: 10rem;
+        left: 29rem;
+    }
+
+    .buttons button {
+        width: 6rem;
+        font-size: 20px;
+    }
+
+    .watch .time {
+        font-size: 50px;
+        left: 3rem;
+        top: 8rem;
+    }
+
+
+}
